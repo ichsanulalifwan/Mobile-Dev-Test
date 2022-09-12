@@ -1,4 +1,4 @@
-package com.example.mobiledevtest.data
+package com.app.mobiledevtest.data
 
 sealed class ApiResponse<out R> {
     data class Success<out T>(val data: T) : ApiResponse<T>()

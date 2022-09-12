@@ -1,6 +1,6 @@
-package com.example.mobiledevtest.data.network
+package com.app.mobiledevtest.data.network
 
-import com.example.mobiledevtest.BuildConfig
+import com.app.mobiledevtest.BuildConfig
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Retrofit

@@ -3,7 +3,11 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="app/src/main/res/drawable/ic_round_arrow_back_ios_24.xml" value="0.157" />
+        <entry key="app/src/main/res/drawable/shape_rectangle_button.xml" value="0.157" />
+        <entry key="app/src/main/res/drawable/shape_rounded_edittext.xml" value="0.157" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.19610507246376813" />
+        <entry key="app/src/main/res/layout/item_user.xml" value="0.19610507246376813" />
       </map>
     </option>
   </component>

@@ -1,6 +1,6 @@
-package com.example.mobiledevtest.data.network
+package com.app.mobiledevtest.data.network
 
-import com.example.mobiledevtest.models.UserResponse
+import com.app.mobiledevtest.models.UserResponse
 import retrofit2.Call
 import retrofit2.http.GET
 import retrofit2.http.Query

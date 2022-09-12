@@ -1,11 +1,11 @@
-package com.example.mobiledevtest
+package com.app.mobiledevtest
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatDelegate
 import androidx.navigation.NavController
 import androidx.navigation.fragment.NavHostFragment
-import com.example.mobiledevtest.databinding.ActivityMainBinding
+import com.app.mobiledevtest.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
 
