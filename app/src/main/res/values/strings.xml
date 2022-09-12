@@ -1,3 +1,16 @@
 <resources>
-    <string name="app_name">Mobile Dev Test</string>
+    <string name="app_name">Suitmedia Mobile Dev Intern Test</string>
+    <string name="image">Image</string>
+    <string name="hint_name">Name</string>
+    <string name="hint_palindrome">Palindrome</string>
+    <string name="txt_check">Check</string>
+    <string name="txt_next">Next</string>
+    <string name="txt_second_screen">Second Screen</string>
+    <string name="txt_btn_choose_a_user">Choose a User</string>
+    <string name="txt_welcome">Welcome</string>
+    <string name="txt_selected_user_name">Selected User Name</string>
+    <string name="txt_third_screen">Third Screen</string>
+    <string name="email_example">EMAIL@EMAIL.COM</string>
+    <string name="example_users_name">Firstname Lastname</string>
+    <string name="user_name">%s %s</string>
 </resources>
