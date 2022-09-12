@@ -4,9 +4,9 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
+import com.app.mobiledevtest.models.Data
 import com.app.mobiledevtest.R
 import com.app.mobiledevtest.databinding.ItemUserBinding
-import com.app.mobiledevtest.models.Data
 
 class UserAdapter : RecyclerView.Adapter<UserAdapter.UserViewHolder>() {
 
