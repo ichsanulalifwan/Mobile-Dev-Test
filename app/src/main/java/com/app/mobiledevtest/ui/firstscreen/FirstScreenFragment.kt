@@ -8,7 +8,7 @@ import androidx.appcompat.app.AlertDialog
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import com.app.mobiledevtest.databinding.FragmentFirstScreenBinding
-import java.util.*
+
 
 class FirstScreenFragment : Fragment() {
 
@@ -39,7 +39,7 @@ class FirstScreenFragment : Fragment() {
 
                     // Check isPalindrome
                     if (validateInput(palindrome, 1)) {
-                        if (isPalindrome(palindrome.lowercase(Locale.getDefault()))) showDialog("isPalindrome")
+                        if (isPalindrome(palindrome)) showDialog("isPalindrome")
                         else showDialog("not palindrome")
                     }
                 }
@@ -94,17 +94,29 @@ class FirstScreenFragment : Fragment() {
      * Check if name isPalindrome or not
      */
     private fun isPalindrome(name: String): Boolean {
-        val value = name.replace("\\s+".toRegex(), "")
 
-        var result = true
+        var head = 0
+        var tail = name.length - 1
+        var cHead: Char
+        var cTail: Char
 
-        for (i in value.length - 1 downTo 0) {
-            if (value[i] != value[value.length - 1 - i]) {
-                result = false
+        while (head <= tail) {
+            cHead = name[head]
+            cTail = name[tail]
+            if (!Character.isLetterOrDigit(cHead)) {
+                head++
+            } else if (!Character.isLetterOrDigit(cTail)) {
+                tail--
+            } else {
+                if (cHead.lowercaseChar() != cTail.lowercaseChar()) {
+                    return false
+                }
+                head++
+                tail--
             }
         }
 
-        return result
+        return true
     }
 
     /**
