@@ -58,10 +58,9 @@ class SecondScreenFragment : Fragment() {
 
     // Populate and set data from previous page
     private fun populateData(userName: String?, selectedUser: String?) {
-        with(binding) {
+        binding.run {
             if (userName != null && userName.isNotEmpty()) tvUserName.text = userName
-            if (selectedUser != null && selectedUser.isNotEmpty()) tvSelectedUser.text =
-                selectedUser
+            if (selectedUser != null && selectedUser.isNotEmpty()) tvSelectedUser.text = selectedUser
         }
     }
 

@@ -29,7 +29,7 @@ class FirstScreenFragment : Fragment() {
 
         if (activity != null) {
 
-            with(binding) {
+            binding.run {
 
                 // Button to check Palindrome text
                 btnCheck.setOnClickListener {
@@ -48,7 +48,7 @@ class FirstScreenFragment : Fragment() {
                 btnNext.setOnClickListener {
 
                     // Get Name from user input
-                    val name = binding.edName.text.toString()
+                    val name = edName.text.toString()
 
                     // Check name value before navigate
                     if (validateInput(name, 0)) {
@@ -70,7 +70,7 @@ class FirstScreenFragment : Fragment() {
      * type -- 1 -> check palindrome text
      */
     private fun validateInput(text: String, type: Int): Boolean {
-        with(binding) {
+        binding.run {
             if (text.isEmpty()) {
                 when (type) {
                     0 -> {
